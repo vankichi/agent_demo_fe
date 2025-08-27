@@ -8,42 +8,42 @@ const useCases = [
     description: 'エクセルファイルから自動で決算書を生成',
     path: '/financial_statement',
     icon: FileSpreadsheet,
-    gradient: 'from-tokyo-night to-tokyo-night'
+    gradient: 'from-blue-500 to-blue-600'
   },
   {
     title: 'ワークフロー自動化',
     description: '申請内容に応じた自動化処理',
     path: '/workflow',
     icon: Workflow,
-    gradient: 'from-tokyo-night to-tokyo-night'
+    gradient: 'from-green-500 to-green-600'
   },
   {
     title: '買い物エージェント',
     description: 'AIによる最適な商品提案とお買い物サポート',
     path: '/commerce',
     icon: ShoppingCart,
-    gradient: 'from-tokyo-night to-tokyo-night'
+    gradient: 'from-red-500 to-red-600'
   },
   {
     title: 'コンテンツ作成',
     description: 'AI支援によるコンテンツ自動生成',
     path: '/create_content',
     icon: PenTool,
-    gradient: 'from-tokyo-night to-tokyo-night'
+    gradient: 'from-purple-500 to-purple-600'
   }
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-6xl font-bold text-foreground mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Agent Demo
+          <h1 className="text-6xl font-bold text-slate-900 mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Agent Demo
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Difyで開発したAIアプリです。
+            AI Agentを利用したデモです
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                      詳しく見るssssssssss
+                      詳しく見る
                       <ArrowRight className="ml-2 w-5 h-5" />
                     </div>
                   </CardContent>
